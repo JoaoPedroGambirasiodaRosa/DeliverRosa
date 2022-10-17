@@ -6,22 +6,48 @@
     android:layout_height="match_parent"
     android:fillViewport="true"
     android:orientation="vertical"
-    tools:context=".Form_Login">
+    tools:context=".Form_Cadastro">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <ImageView
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/fotoUsu"
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
-            android:src="@drawable/logo" />
+            android:src="@color/black" />
+
+        <Button
+            android:id="@+id/btSelecFoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@android:color/transparent"
+            android:maxLines="1"
+            android:text="Selecione uma Foto"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/etEmail"
+            android:id="@+id/etCadNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text_shape"
+            android:hint="João Pedro Marques"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:padding="15dp" />
+
+        <EditText
+            android:id="@+id/etCadEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
@@ -33,7 +59,7 @@
             android:padding="15dp" />
 
         <EditText
-            android:id="@+id/etSenha"
+            android:id="@+id/etCadSenha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
@@ -45,7 +71,7 @@
             android:padding="15dp" />
 
         <TextView
-            android:id="@+id/txtErro"
+            android:id="@+id/txtCadErro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -53,22 +79,23 @@
             android:textSize="16sp" />
 
         <Button
-            android:id="@+id/btEntrar"
+            android:id="@+id/btCadastrar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:backgroundTint="@color/dark_red"
+            android:enabled="false"
             android:padding="15dp"
-            android:text="Entrar"
+            android:text="Cadastrar"
+            android:textColor="@color/white"
             android:textSize="18sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/txtCriarUser"
+            android:id="@+id/txtEntrar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Não tem uma conta? Clique aqui para criar"
+            android:text="Já tem uma conta? Clique aqui para entrar."
             android:textSize="18sp"
             android:textStyle="bold" />
 
