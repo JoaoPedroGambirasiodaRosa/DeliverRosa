@@ -1,4 +1,4 @@
-package com.example.delivery3000;
+package com.example.delivery;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+
+import com.example.delivery.R;
 
 public class Form_Login extends AppCompatActivity {
     TextView txtCadastro;

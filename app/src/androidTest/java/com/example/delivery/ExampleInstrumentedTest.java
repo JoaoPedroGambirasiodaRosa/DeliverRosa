@@ -1,4 +1,4 @@
-package com.example.delivery3000;
+package com.example.delivery;
 
 import android.content.Context;
 

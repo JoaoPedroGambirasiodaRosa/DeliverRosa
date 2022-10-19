@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:fillViewport="true"
     android:orientation="vertical"
-    tools:context=".Form_Login">
+    tools:context="com.example.delivery.Form_Login">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,7 +27,7 @@
             android:layout_marginHorizontal="20dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/edit_text_shape"
-            android:hint="email@gmail.com"
+            android:hint="Insira seu E-mail:"
             android:inputType="textEmailAddress"
             android:maxLines="1"
             android:padding="15dp" />
@@ -39,7 +39,7 @@
             android:layout_marginHorizontal="20dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/edit_text_shape"
-            android:hint="senha123"
+            android:hint="Insira sua Senha:"
             android:inputType="numberPassword"
             android:maxLines="1"
             android:padding="15dp" />

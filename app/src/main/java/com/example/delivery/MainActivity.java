@@ -1,10 +1,10 @@
-package com.example.delivery3000;
+package com.example.delivery;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.google.firebase.ktx.Firebase;
+import com.example.delivery.R;
 
 public class MainActivity extends AppCompatActivity {
 

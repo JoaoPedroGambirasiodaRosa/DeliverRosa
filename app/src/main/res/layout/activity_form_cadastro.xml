@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:fillViewport="true"
     android:orientation="vertical"
-    tools:context=".Form_Cadastro">
+    tools:context="com.example.delivery.Form_Cadastro">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -41,7 +41,7 @@
             android:layout_marginHorizontal="20dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/edit_text_shape"
-            android:hint="João Pedro Marques"
+            android:hint="Insira seu Nome:"
             android:inputType="textEmailAddress"
             android:maxLines="1"
             android:padding="15dp" />
@@ -53,7 +53,7 @@
             android:layout_marginHorizontal="20dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/edit_text_shape"
-            android:hint="email@gmail.com"
+            android:hint="Insira o seu E-mail:"
             android:inputType="textEmailAddress"
             android:maxLines="1"
             android:padding="15dp" />
@@ -65,18 +65,19 @@
             android:layout_marginHorizontal="20dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/edit_text_shape"
-            android:hint="senha123"
+            android:hint="Insira sua Senha:"
             android:inputType="numberPassword"
             android:maxLines="1"
             android:padding="15dp" />
 
         <TextView
             android:id="@+id/txtCadErro"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:textColor="@color/red"
-            android:textSize="16sp" />
+            android:textSize="20sp"
+            android:padding="5dp"/>
 
         <Button
             android:id="@+id/btCadastrar"
@@ -90,22 +91,6 @@
             android:textSize="18sp"
             android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/txtEntrar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Já tem uma conta? Clique aqui para entrar."
-            android:textSize="18sp"
-            android:textStyle="bold" />
 
-        <ProgressBar
-            android:id="@+id/pbTelaPrincipal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:indeterminateTint="@color/red"
-            android:visibility="invisible" />
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>
